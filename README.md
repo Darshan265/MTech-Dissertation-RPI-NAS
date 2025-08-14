@@ -13,6 +13,7 @@ Building a Smart NAS System Using Raspberry Pi 4B with Bluetooth File Transfer a
 2. Power Adapter: 1: 5V 3A
 3. USB Drive: 1: 128Gb
 4. User Equipment(Laptop, mobile) with wifi and bluetooth enabled
+5. SD Card:1: minimum 16Gb
 
 **Phases**
 1. Prerequisite Setup: Components collection, environment setup( OS installation, installing packages).
