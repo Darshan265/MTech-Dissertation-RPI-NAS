@@ -1,10 +1,10 @@
-**Prerequisite Setup**
-                            **I.Steps to Flash Raspberry Pi OS and Enable SSH**
+                                            **Prerequisite Setup**
+**I.Steps to Flash Raspberry Pi OS and Enable SSH**
 **Requirements**
--A computer (Windows, macOS, or Linux)
--An SD card (8GB minimum recommended)
--An SD card reader (if not built-in to your computer)
--Raspberry Pi Imager software
+  -A computer (Windows, macOS, or Linux)
+  -An SD card (8GB minimum recommended)
+  -An SD card reader (if not built-in to your computer)
+  -Raspberry Pi Imager software
 
 
 1. Download and Install Raspberry Pi Imager
@@ -43,14 +43,14 @@
     -Once the writing process is complete, you will see a message indicating success.
     -Safely eject the SD card from your computer.
 
-**II. Make Connections**
+    **II. Make Connections**
 1. Insert the SD Card into Raspberry Pi
 2. Insert the newly flashed SD card into the SD card slot of your Raspberry Pi.
 3. Insert Usb drive into USB port of raspberry pi.
 4. Power On the Raspberry Pi
 5. Connect the power supply to your Raspberry Pi to turn it on.
 
-III. Install Dependencies
+    **III. Install Dependencies**
 NOTE: If you have a monitor connected, you should see the Raspberry Pi OS booting up. In this case i am assuming that you are trying to estabilsh a headless setup
 1. Install Software "Advanced IP Scanner" if do not have.
 2. Open it and search "<RPI hostname>" in search bar. IP address of RPi will appear.
@@ -58,4 +58,12 @@ NOTE: If you have a monitor connected, you should see the Raspberry Pi OS bootin
         $ssh <username>@<ip>
   e.g. ssh pi@10.0.0.223
 
-4. execute bash script get_started.sh
+4. Execute bash script "get_started.sh" to update fimware.
+5. Check with other basic linux commands
+        ifconfig                      check ip of RPI
+        df -h                         check disk usage
+        free -m                       check RAM usage
+        vcgencmd measure_temp         check the CPU temperature of a RPI
+7. Environment is ready to start creating project.
+
+
