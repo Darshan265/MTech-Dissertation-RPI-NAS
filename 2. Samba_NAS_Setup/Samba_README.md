@@ -1,4 +1,4 @@
-                                              **SETTING UP SAMBA ON RPI **
+   **SETTING UP SAMBA ON RPI **
 
 I.OBJECTIVES - User(Windows, Linux, MacOS or Android) in the same LAN will be able to upload and download files via drag and drop method.
 
@@ -10,7 +10,9 @@ I.OBJECTIVES - User(Windows, Linux, MacOS or Android) in the same LAN will be ab
 
 II. MOUNT THE USB DRIVE 
 - **Update System Packages**
-  - ```$ sudo apt update && sudo apt full-upgrade -y` ```
+  - ```
+    $ sudo apt update && sudo apt full-upgrade -y
+     ```
 - **Verify USB Storage Device**
   - ```$ lsblk```
   - ```$ fdisk -l```
