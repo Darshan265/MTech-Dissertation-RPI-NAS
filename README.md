@@ -8,12 +8,20 @@
 4. Alert Automation: Develop Python scripts to monitor system status (disk usage, connectivity) and send real-time WhatsApp alerts through Twilio API when thresholds/events         occur.
 5.Security (CIA Triad): Design security for Confidentiality (user-authenticated Samba, storage encryption), Integrity (checksums, change-logging, backups) and Availability        (RAID redundancy, auto-restart, health alerts).
 
-## hardware :Quantity: its specifications
+## Hardware :Quantity: its specifications
 1. Raspberry Pi: 1: 4b model, 2Gb RAM, 5V, 3A
 2. Power Adapter: 1: 5V 3A
 3. USB Drive: 1: 128Gb
 4. User Equipment(Laptop, mobile) with wifi and bluetooth enabled
 5. SD Card:1: minimum 16Gb
+
+## Tech Stack
+- Raspberry Pi 4B(ARM Cortex A-72)
+- Linux(Rasbion OS, 64 bits)
+- python language
+- Networking
+- HTML
+- Git and Github
 
 ## Phases
 1. Prerequisite Setup: Components collection, environment setup( OS installation, installing packages).
