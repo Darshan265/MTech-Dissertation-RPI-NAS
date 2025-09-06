@@ -10,10 +10,16 @@ I.OBJECTIVES - User(Windows, Linux, MacOS or Android) in the same LAN will be ab
 
 II. MOUNT THE USB DRIVE 
 - **Update System Packages**
-  - ``` sudo apt update && sudo apt full-upgrade -y```
+  - ```
+    sudo apt update && sudo apt full-upgrade -y
+    ```
 - **Verify USB Storage Device**
-  ```lsblk```
-  ```fdisk -l```
+  ```
+  lsblk
+  ```
+  ```
+  fdisk -l
+  ```
   - Identify your device (e.g., `/dev/sda1`)
 - **Create Mount Directory**
   ```sudo mkdir -p /mnt/usb128GB/share```
