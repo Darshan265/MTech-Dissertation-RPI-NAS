@@ -20,5 +20,6 @@
 
 ## Step 3: Check drag and drop feature of NAS
 - Similar to any local folder
+- Try copy, paste files from local disk to RPI NAS.
   
   
