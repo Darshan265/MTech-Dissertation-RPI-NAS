@@ -66,7 +66,76 @@ UUID=<your-uuid> /mnt/usb128GB ext4 defaults,noatime 0 0
 sudo chown -R pi:pi /mnt/usb128GB
 ```
 
-# Step 2: 
-1. 
+# Step 2: Install System Packages
+1. Update and install Python 3 and pip on the Pi:
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install -y python3 python3-pip
+```
+2. Use a Python virtual environment (venv)
+- To isolate this project’s Python dependencies (so they don’t affect the system or other projects)
+```
+python3 -m venv venv
+```
+- Activate it:
+```
+source /home/pi/nas_dashboard/venv/bin/activate
+```
+- Install Flask and Flask-Login (for authentication) inside the venv:
+```
+pip install flask flask-login
+```
+NOTE: When finished working on the project, deactivate the venv:
+```
+deactivate
+```
+3. Flask Application Code
+- Create a directory "~/nas_dashboard/" and go inside it
+```
+mkdir nas_dashboard
+```
+```
+cd /home/pi/nas_dashboard
+```
+- Create Application code
+```
+nano app.py
+```
+refer: app.py in present repository.
 
+4. HTML Template
+- Project Structure:
+```
+/home/pi/nas_dashboard/
+├── app.py
+├── venv/
+└── templates/
+    ├── login.html
+    └── dashboard.html
+```
+- Create login.html  and dashboard.html in directory named "templates"
+refer:present github repo
 
+5. Run Flask Application:
+- Note: run inside virtual virtual environment.
+```
+python app.py
+```
+6. Access in Browser
+- Find Pi’s IP:
+```
+hostname -I
+```
+- Access locally:
+```
+http://<raspberry-pi-ip>:5000
+```
+- Or by hostname (if mDNS is working):
+```
+http://raspberrypi.local:5000
+```
+- Enter set login
+
+  7. Verify working
+- Check login, list of files, upload, download 
+     refer: https://drive.google.com/file/d/1uAlnTGP1_5xUEHyBV0-FzBLQUw5fcXnR/view?usp=drive_link 
