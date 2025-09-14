@@ -109,15 +109,14 @@
     
 
 ## IV. VERIFICATION
-    -  Access NAS from Client Devices
-      - Go to File Explorer> Network.
-      - Select Path
-      - Windows: 
-      
-      
-      \\<raspberry_pi_ip>\nas
-      
-      - Linux: 
+  -  Access NAS from Client Devices
+  - Go to File Explorer> Network.
+  - Select Path
+  - Windows: 
+  ```
+    \\<raspberry_pi_ip>\nas
+  ```     
+  - Linux: 
       
       ```
       smb://<raspberry_pi_ip>/nas
