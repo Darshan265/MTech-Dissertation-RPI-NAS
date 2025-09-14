@@ -1,14 +1,14 @@
-   **SETTING UP SAMBA ON RPI **
+   # SETTING UP SAMBA ON RPI 
 
-I.OBJECTIVES - User(Windows, Linux, MacOS or Android) in the same LAN will be able to upload and download files via drag and drop method.
+## I.OBJECTIVES - User(Windows, Linux, MacOS or Android) in the same LAN will be able to upload and download files via drag and drop method.
 
-   ## Prerequisites
+## Prerequisites
 - Raspberry Pi 4B with Raspberry Pi OS installed
 - Network connectivity (Ethernet or Wi-Fi)
 - External USB storage device (e.g., 128GB USB stick or HDD)
 - Basic knowledge of Linux command-line operations
 
-II. MOUNT THE USB DRIVE 
+## II. MOUNT THE USB DRIVE 
 - **Update System Packages**
   - ```
     sudo apt update && sudo apt full-upgrade -y
@@ -59,13 +59,13 @@ II. MOUNT THE USB DRIVE
     sudo mount -a
     ```
 
-II.INSTALLATION
+## II.INSTALLATION
        ```
        sudo apt install samba samba-common-bin -y
        ```
 
     
-III. CONFIGURATION
+## III. CONFIGURATION
 - **Backup Default Samba Config**
   ```
   sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bkup
@@ -108,7 +108,7 @@ III. CONFIGURATION
   - Note down the IP for client access.
     
 
-IV. VERIFICATION
+## IV. VERIFICATION
     - **Access NAS from Client Devices**
       - Go to File Explorer> Network.
       - Select Path
@@ -136,7 +136,7 @@ IV. VERIFICATION
    smbclient -L //<raspberry_pi_ip> -U pi
    ```
 
-V. TROUBLESHOOTING
+## V. TROUBLESHOOTING
     - **Mount Failure**
   - Check device:
     ```
