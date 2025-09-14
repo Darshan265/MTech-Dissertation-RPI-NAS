@@ -1,4 +1,4 @@
-#Bluetooth File Transfer on Raspberry Pi NAS
+# Bluetooth File Transfer on Raspberry Pi NAS
 
 This guide explains how to set up your Raspberry Pi as a **Bluetooth
 file receiver** using the OBEX Object Push (OPP) profile.\
