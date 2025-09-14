@@ -45,6 +45,7 @@ on scan on When your phone/laptop appears, pair and trust it (replace
 MAC with your device's address):
 
 text Copy code pair XX:XX:XX:XX:XX:XX trust XX:XX:XX:XX:XX:XX quit 
+
 4. Manual test (one-off run) Run the OBEX server directly:
 
 ```
