@@ -10,9 +10,9 @@
 
 ## II. MOUNT THE USB DRIVE 
 - **Update System Packages**
-  - ```
+  ```
     sudo apt update && sudo apt full-upgrade -y
-    ```
+  ```
 - **Verify USB Storage Device**
   ```
   lsblk
