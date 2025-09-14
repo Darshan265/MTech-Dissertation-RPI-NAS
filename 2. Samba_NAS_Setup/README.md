@@ -60,9 +60,9 @@
     ```
 
 ## II.INSTALLATION
-       ```
+       
        sudo apt install samba samba-common-bin -y
-       ```
+       
 
     
 ## III. CONFIGURATION
