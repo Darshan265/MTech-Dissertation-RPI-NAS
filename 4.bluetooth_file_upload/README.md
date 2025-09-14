@@ -127,8 +127,8 @@ files looks like for people using your NAS:
 - Refresh the Flask
 - NAS dashboard in your browser --- the new file will be listed.
 
-##Troubleshooting 
-###"transfer forbidden by target device" 
+## Troubleshooting 
+### "transfer forbidden by target device" 
 Cause: The Pi has not trusted your device, or obexd isn't running with
 --auto-accept.
 Fix: In bluetoothctl, run:
@@ -136,7 +136,7 @@ trust XX:XX:XX:XX:XX:XX connect XX:XX:XX:XX:XX:XX Then restart the OBEX daemon:
 ```
 systemctl --user restart obex.service
 ```
-###"Name already in use" 
+### "Name already in use" 
 Cause: Another obexd instance is already running.
 Fix: Stop the default one and use your custom service:
 ```
@@ -165,7 +165,7 @@ sudo chown -R pi:pi /mnt/usb128GB/share
 ```
 sudo chmod -R 770 /mnt/usb128GB/share
 ```
-###Security Notes Only paired + trusted devices can send files.
+### Security Notes Only paired + trusted devices can send files.
 --auto-accept means any trusted device can drop files without asking.
 Use only with devices you control.
 
