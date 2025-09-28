@@ -36,9 +36,9 @@ sudo chmod -R 770 /mnt/usb128GB/share
 
  3. Enable Bluetooth and pair
 devices Start the Bluetooth tool:
-
+Inside the prompt:
 ```
- sudo bluetoothctl Inside the prompt:
+ sudo bluetoothctl 
 ```
 power on agent on default-agent discoverable on pairable
 on scan on When your phone/laptop appears, pair and trust it (replace
